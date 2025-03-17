@@ -10,26 +10,43 @@ import org.testng.annotations.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class LambdaTestAutomationGrid {
-    private WebDriver driver;
     private WebDriverWait wait;
     private List<String> windowsList;
+    String username="spdineshkumar026outlook";
+    String accesskey ="LT_hTPFwdvtXGbENlqzr65RkS8axgH91IorFdztjBP9IinsFS2";
+    static RemoteWebDriver driver =null;
+    String gridURL = "@hub.lambdatest.com/wd/hub";
+
     
     @Parameters({"browser", "version", "platform"})
     @BeforeClass
     public void setup(String browser, String version, String platform) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName(browser);
         capabilities.setVersion(version);
-        capabilities.setPlatform(Platform.fromString(platform));
+        capabilities.setCapability("platformName", platform);
+        capabilities.setBrowserName(browser);
+        HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+        ltOptions.put("visual", true);
+        ltOptions.put("video", true);
+        ltOptions.put("build", "Build04");
+        ltOptions.put("name", "Lambda Test Execution");
+        ltOptions.put("project", "LambdaTest");
+        ltOptions.put("selenium_version", "4.27.0");
+        ltOptions.put("driver_version", version);
+      //  ltOptions.put("console", "true");
+      //  ltOptions.put("timezone", "Kolkata");
+
+        ltOptions.put("w3c", true);
+       capabilities.setCapability("LT:Options", ltOptions);
         
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("https://"+username+":"+accesskey+gridURL), capabilities);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
     
     @Test(priority = 1)
@@ -49,7 +66,8 @@ public class LambdaTestAutomationGrid {
 
     @Test(priority = 3)
     public void handleNewTab() {
-        Set<String> windowHandles = driver.getWindowHandles();
+    	
+    	Set<String> windowHandles = driver.getWindowHandles();
         windowsList = windowHandles.stream().toList();
         System.out.println("Window Handles: " + windowsList);
         driver.switchTo().window(windowsList.get(1));
@@ -69,9 +87,12 @@ public class LambdaTestAutomationGrid {
 
     @Test(priority = 6)
     public void clickTestingWhizIntegration() {
-        WebElement testingWhizLink = driver.findElement(By.xpath("//a[normalize-space()='Integrate Testing Whiz with LambdaTest']") );
+    	By locator = By.xpath("//a[normalize-space()='Integrate Testing Whiz with LambdaTest']");
+
         ((JavascriptExecutor) driver).executeScript("javascript:window.scrollBy(250,350)");
-        wait.until(ExpectedConditions.visibilityOf(testingWhizLink));
+        
+        // Use WebDriverWait to locate the element again before clicking
+        WebElement testingWhizLink = wait.until(ExpectedConditions.elementToBeClickable(locator));
         testingWhizLink.click();
     }
 
