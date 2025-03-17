@@ -10,6 +10,14 @@
         </classes>
     </test>
 
+    <test name="Edge Test">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="127.0"/>
+        <parameter name="platform" value="macOS Ventura"/>
+        <classes>
+            <class name="automation.LambdaTestAutomationGrid"/>
+        </classes>
+    </test>
     
     
 </suite>

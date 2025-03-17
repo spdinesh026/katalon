@@ -17,8 +17,8 @@ import java.util.Set;
 public class LambdaTestAutomationGrid {
     private WebDriverWait wait;
     private List<String> windowsList;
-    String username="spdineshkumar026outlook";
-    String accesskey ="LT_hTPFwdvtXGbENlqzr65RkS8axgH91IorFdztjBP9IinsFS2";
+    String username="spdinesh026";
+    String accesskey ="LT_WYGSTc4jUMxdFDWRAC1jpmfvXzy4kQB4P1XNM0WHoB77zb6";
     static RemoteWebDriver driver =null;
     String gridURL = "@hub.lambdatest.com/wd/hub";
 
@@ -47,6 +47,7 @@ public class LambdaTestAutomationGrid {
         driver = new RemoteWebDriver(new URL("https://"+username+":"+accesskey+gridURL), capabilities);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().window().maximize();
     }
     
     @Test(priority = 1)

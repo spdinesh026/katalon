@@ -2,77 +2,77 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T05:01:01Z" name="LambdaTestSuite" finished-at="2025-03-17T05:01:25Z" duration-ms="23876">
+  <suite started-at="2025-03-17T05:28:17Z" name="LambdaTestSuite" finished-at="2025-03-17T05:28:38Z" duration-ms="20844">
     <groups>
     </groups>
-    <test started-at="2025-03-17T05:01:01Z" name="Chrome Test" finished-at="2025-03-17T05:01:25Z" duration-ms="23876">
+    <test started-at="2025-03-17T05:28:17Z" name="Edge Test" finished-at="2025-03-17T05:28:38Z" duration-ms="20844">
       <class name="automation.LambdaTestAutomationGrid">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:01Z" name="setup" finished-at="2025-03-17T05:01:11Z" duration-ms="10301" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:17Z" name="setup" finished-at="2025-03-17T05:28:31Z" duration-ms="14320" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[MicrosoftEdge]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[128.0]]>
+                <![CDATA[127.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Windows 10]]>
+                <![CDATA[macOS Ventura]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigateToLambdaTest()[pri:1, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:11Z" name="navigateToLambdaTest" finished-at="2025-03-17T05:01:14Z" duration-ms="2202" status="PASS">
+        <test-method signature="navigateToLambdaTest()[pri:1, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:31Z" name="navigateToLambdaTest" finished-at="2025-03-17T05:28:32Z" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToLambdaTest -->
-        <test-method signature="clickExploreAllIntegrations()[pri:2, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:14Z" name="clickExploreAllIntegrations" finished-at="2025-03-17T05:01:15Z" duration-ms="1324" status="PASS">
+        <test-method signature="clickExploreAllIntegrations()[pri:2, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:32Z" name="clickExploreAllIntegrations" finished-at="2025-03-17T05:28:32Z" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickExploreAllIntegrations -->
-        <test-method signature="handleNewTab()[pri:3, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:15Z" name="handleNewTab" finished-at="2025-03-17T05:01:16Z" duration-ms="644" status="PASS">
+        <test-method signature="handleNewTab()[pri:3, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:32Z" name="handleNewTab" finished-at="2025-03-17T05:28:32Z" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleNewTab -->
-        <test-method signature="verifyIntegrationsPageURL()[pri:4, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:16Z" name="verifyIntegrationsPageURL" finished-at="2025-03-17T05:01:16Z" duration-ms="447" status="PASS">
+        <test-method signature="verifyIntegrationsPageURL()[pri:4, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:32Z" name="verifyIntegrationsPageURL" finished-at="2025-03-17T05:28:32Z" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIntegrationsPageURL -->
-        <test-method signature="scrollToCodelessAutomation()[pri:5, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:16Z" name="scrollToCodelessAutomation" finished-at="2025-03-17T05:01:17Z" duration-ms="395" status="PASS">
+        <test-method signature="scrollToCodelessAutomation()[pri:5, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:32Z" name="scrollToCodelessAutomation" finished-at="2025-03-17T05:28:32Z" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollToCodelessAutomation -->
-        <test-method signature="clickTestingWhizIntegration()[pri:6, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:17Z" name="clickTestingWhizIntegration" finished-at="2025-03-17T05:01:18Z" duration-ms="1661" status="PASS">
+        <test-method signature="clickTestingWhizIntegration()[pri:6, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:32Z" name="clickTestingWhizIntegration" finished-at="2025-03-17T05:28:33Z" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTestingWhizIntegration -->
-        <test-method signature="verifyTestingWhizPageTitle()[pri:7, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:18Z" name="verifyTestingWhizPageTitle" finished-at="2025-03-17T05:01:19Z" duration-ms="690" status="PASS">
+        <test-method signature="verifyTestingWhizPageTitle()[pri:7, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:33Z" name="verifyTestingWhizPageTitle" finished-at="2025-03-17T05:28:33Z" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTestingWhizPageTitle -->
-        <test-method signature="closeNewTabAndSwitchBack()[pri:8, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:19Z" name="closeNewTabAndSwitchBack" finished-at="2025-03-17T05:01:20Z" duration-ms="715" status="PASS">
+        <test-method signature="closeNewTabAndSwitchBack()[pri:8, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:33Z" name="closeNewTabAndSwitchBack" finished-at="2025-03-17T05:28:33Z" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeNewTabAndSwitchBack -->
-        <test-method signature="navigateToBlog()[pri:9, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:20Z" name="navigateToBlog" finished-at="2025-03-17T05:01:20Z" duration-ms="276" status="PASS">
+        <test-method signature="navigateToBlog()[pri:9, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:33Z" name="navigateToBlog" finished-at="2025-03-17T05:28:34Z" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToBlog -->
-        <test-method signature="clickCommunityLinkAndVerify()[pri:10, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:20Z" name="clickCommunityLinkAndVerify" finished-at="2025-03-17T05:01:25Z" duration-ms="4938" status="PASS">
+        <test-method signature="clickCommunityLinkAndVerify()[pri:10, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:34Z" name="clickCommunityLinkAndVerify" finished-at="2025-03-17T05:28:38Z" duration-ms="3781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickCommunityLinkAndVerify -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:01:25Z" name="tearDown" finished-at="2025-03-17T05:01:25Z" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.LambdaTestAutomationGrid@60611244]" started-at="2025-03-17T05:28:38Z" name="tearDown" finished-at="2025-03-17T05:28:38Z" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automation.LambdaTestAutomationGrid -->
-    </test> <!-- Chrome Test -->
+    </test> <!-- Edge Test -->
   </suite> <!-- LambdaTestSuite -->
 </testng-results>
